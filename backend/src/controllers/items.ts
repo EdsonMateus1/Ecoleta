@@ -6,6 +6,7 @@ class ItemsControllers {
 
     const serializedItems = items.map((e) => {
       return {
+        id: e.id,
         title: e.title,
         imagemUrl: `http://localhost:3333/uploads/${e.image}`,
       };

@@ -1,0 +1,9 @@
+export const backgroundColor = "#F0F0F5";
+export const titleColor = "#322153";
+export const textColor = "#6C6C80";
+export const primaryColor = "#34CB79";
+export const pointLiSelecColor = "#E1FAEC";
+export const pointLiColor = "#f5f5f5";
+export const pointButtomHoverColor = "#2FB86E";
+export const headerColor = "#0EEF75";
+export const whiteColor = "#fff";
