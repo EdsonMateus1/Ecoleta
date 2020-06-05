@@ -7,3 +7,5 @@ export const pointLiColor = "#f5f5f5";
 export const pointButtomHoverColor = "#2FB86E";
 export const headerColor = "#0EEF75";
 export const whiteColor = "#fff";
+export const dropzoneColor = "#4ecb79";
+export const dropzoneColorCinza = "#333";

@@ -181,10 +181,5 @@ export const MainContainer = styled.main`
     border: 2px solid #34cb79;
   }
 `;
-export const MapsContainer = styled.div`
-    width: 100%;
-    height: 500px;
-    background-color: #34cb79;
-    margin-bottom: 10px;
 
-`
+

@@ -9,8 +9,11 @@ import { Link } from "react-router-dom";
 const Header: React.FC = () => {
   return (
     <S.MainContainer>
-      <img src={logo} />
-      <Link to="/create-point"> <FiLogIn /> Cadastrar ponto de coleta</Link>
+      <img src={logo} alt="logo" />
+      <Link to="/create-point">
+        {" "}
+        <FiLogIn /> Cadastrar ponto de coleta
+      </Link>
     </S.MainContainer>
   );
 };
