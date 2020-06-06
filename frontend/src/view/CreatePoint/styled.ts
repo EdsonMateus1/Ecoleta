@@ -133,7 +133,7 @@ export const MainContainer = styled.main`
     font-weight: bold;
     font-size: 16px;
     border: 0;
-    align-self: flex-end;
+    align-self: flex-start;
     margin-top: 40px;
     transition: background-color 0.2s;
     cursor: pointer;

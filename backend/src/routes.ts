@@ -9,8 +9,8 @@ const upload = multer(multerConfig);
 
 
 routes.get("/items",ItemsController.index);
-routes.post("/points",PointController.create);
 routes.get("/points/:id",PointController.show);
 routes.get("/points",upload.single("image"),PointController.index);
+routes.post("/points",PointController.create);
 
 export default routes;

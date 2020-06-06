@@ -46,7 +46,6 @@ const CreatePoint: React.FC = () => {
   const [posicionState, setPosicion] = useState<[number, number]>([0, 0]);
   const [selectItemState, setSelectItems] = useState<number[]>([]);
   const [selectFileState, setSelectFile] = useState<File>();
-
   const [formDataState, setFormData] = useState({
     name: "",
     email: "",
@@ -106,10 +105,12 @@ const CreatePoint: React.FC = () => {
   const onDataForm = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
       const { name, value } = e.target;
-      setFormData({ ...formDataState, [name]: value });
+      setFormData((prevState) => ({ ...prevState, [name]: value }));
     },
     [formDataState]
   );
+  console.log(formDataState);
+  
 
   const handleSelectItem = useCallback(
     (id: number) => {
@@ -129,7 +130,7 @@ const CreatePoint: React.FC = () => {
       e.preventDefault();
 
       const data = new FormData();
-      
+
       data.append("name", formDataState.name);
       data.append("email", formDataState.email);
       data.append("whatsapt", formDataState.whatsapt);
